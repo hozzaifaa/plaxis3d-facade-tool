@@ -57,6 +57,6 @@ You are free to use, modify, and distribute this tool — including for commerci
 
 ## 🛠 Author
 
-**Unina Automation**  
+**Hozaifa Ahmed**  
 This tool was developed as part of a research and automation effort in geotechnical modeling with PLAXIS 3D.
 
