@@ -298,6 +298,9 @@ def main():
             interface_g = g_i.posinterface(surface_foot9)
             interface_g = g_i.neginterface(surface_foot10)
             interface_g = g_i.posinterface(surface_foot)
+            #for i in range(22):
+            #    g_i.Soils[i].Material = material_EL if i == 10 else material_lintel
+            #    g_i.Soils[21].Material = material_footing
 
         g_i.extrude(surface_foot, 0, 0, footing_height)
 
@@ -305,9 +308,7 @@ def main():
         #g_i.rotate(g_i.Surfaces[:], (x_offset, y_offset, 0), 0, 0, -theta)
         g_i.rotate(g_i.Volumes[:], (x_offset, y_offset, 0), 0, 0, -theta)
         # Set material for soils
-        for i in range(22):
-            g_i.Soils[i].Material = material_EL if i == 10 else material_lintel
-        g_i.Soils[21].Material = material_footing
+
 
         easygui.msgbox("Simplified facade created successfully.", "PLAXIS 3D")
 
